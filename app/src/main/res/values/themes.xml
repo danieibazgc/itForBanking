@@ -13,4 +13,16 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set splash screen background color -->
+        <item name="windowSplashScreenBackground">@android:color/white</item>
+        <!-- Set splash screen icon -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ibk</item>
+        <!-- Icon size -->
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <!-- Post splash screen theme -->
+        <item name="postSplashScreenTheme">@style/Theme.Interbank</item>
+    </style>
 </resources>

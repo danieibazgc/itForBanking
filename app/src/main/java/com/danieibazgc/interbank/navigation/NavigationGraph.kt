@@ -6,13 +6,25 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.danieibazgc.interbank.ui.screens.HomeScreen
 import com.danieibazgc.interbank.ui.screens.LoginScreen
+import com.danieibazgc.interbank.ui.screens.SplashScreen
 
 @Composable
 fun NavigationGraph(navController: NavHostController) {
     NavHost(
         navController = navController,
-        startDestination = Screen.Login.route
+        startDestination = Screen.Splash.route
     ) {
+        composable(route = Screen.Splash.route) {
+            SplashScreen(
+                onNavigateToLogin = {
+                    navController.navigate(Screen.Login.route) {
+                        // Eliminar el Splash del back stack para que no se pueda volver
+                        popUpTo(Screen.Splash.route) { inclusive = true }
+                    }
+                }
+            )
+        }
+
         composable(route = Screen.Login.route) {
             LoginScreen(
                 onLoginSuccess = {
