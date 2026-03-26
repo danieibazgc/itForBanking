@@ -1,5 +1,10 @@
 # Interbank - Aplicación Android
 
+<p align="center">
+  <img src="./app/src/main/res/drawable/ibk1.JPG" alt="Captura 1" width="260"/>
+  <img src="./app/src/main/res/drawable/ibk2.JPG" alt="Captura 2" width="260"/>
+</p>
+
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-blue.svg)](https://kotlinlang.org)
 [![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-2024.10.01-green.svg)](https://developer.android.com/jetpack/compose)
 [![API Level](https://img.shields.io/badge/API-36%20(Android%2016)-brightgreen.svg)](https://developer.android.com/about/versions/16)
